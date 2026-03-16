@@ -1,16 +1,19 @@
-import pygame
-from config import * 
-from game.game import Game
+import pygame  # importuje knihovnu pygame pro grafiku a vstupy
+from config import *  # importuje všechna nastavení a konstanty z config.py
+from game.game import Game  # importuje třídu Game, která řídí hru
+
 
 def main():
-    pygame.init()
+    pygame.init()  # inicializuje všechny moduly pygame
+    # vytvoří okno s rozměry definovanými v configu
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    pygame.display.set_caption("Rashfordík")
+    pygame.display.set_caption("Rashfordík")  # nastaví název okna
 
-    game = Game(screen)
-    game.run()
+    game = Game(screen)  # vytvoří instanci hry a předá jí povrch (screen)
+    game.run()  # spustí hlavní herní smyčku
 
-    pygame.quit()
+    pygame.quit()  # ukončí pygame a uvolní zdroje
+
 
 if __name__ == "__main__":
-    main()
+    main()  # spustí hlavní funkci, pokud je soubor spuštěn přímo

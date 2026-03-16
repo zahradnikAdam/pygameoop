@@ -1,16 +1,21 @@
-SCREEN_HEIGHT = 600
-SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600  # výška okna v pixelech
+SCREEN_WIDTH = 800  # šířka okna v pixelech
 
 
-SKY_BLUE = (30,70,51)
-FPS = 60
+# barva oblohy (pozadí) jako RGB tuple
+SKY_BLUE = (135, 206, 235)
+FPS = 60  # snímků za sekundu cílově
 
-PLATFORM_COLOR = (50, 50, 255)
+PLATFORM_COLOR = (34, 139, 34)  # barva plošin (zelená)
 
-PLAYER_WIDTH = 40
-PLAYER_HEIGHT = 40
-PLAYER_COLOUR = (255,50,50)
-PLAYER_SPEED = 5
-JUMP_POWER = 15
+PLAYER_WIDTH = 50  # šířka hráče v pixelech
+PLAYER_HEIGHT = 50  # výška hráče v pixelech
+PLAYER_COLOUR = (255, 50, 50)  # barva (pokud obrázek není dostupný)
+PLAYER_SPEED = 5  # horizontální rychlost hráče
+JUMP_POWER = 20  # počáteční výška (síla) skoku
 
-GRAVITY = 0.8
+GRAVITY = 0.8  # gravitační zrychlení přidávané každý frame
+ 
+# výchozí rozměry nepřátel
+ENEMY_WIDTH = 70
+ENEMY_HEIGHT = 70
